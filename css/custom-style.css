@@ -216,4 +216,32 @@ a:active {
 	margin-bottom:0;
 }
 
+.about-image{
+	width:355px;
+	margin-right:2rem;
+	margin-bottom:2rem;
+}
+
 /* end ebout page */
+
+.push-down{
+	margin-top:80px;
+}
+
+@media (min-width: 768px) {
+	
+	.push-down{
+	margin-top:150px;
+}
+
+@media (min-width: 980px) {
+	
+	.about-image{
+		width:300px;}
+}
+
+@media (min-width: 1240px) {
+	
+	.about-image{
+		width:355px;}
+}
