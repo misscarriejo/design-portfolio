@@ -1,0 +1,219 @@
+h1, h2, h3, h4 {
+	font-family: 'Archivo Narrow', sans-serif;
+  	font-weight: 400;
+  	letter-spacing: .2rem;
+  	text-transform: uppercase;
+}
+
+p {
+	font-family: 'Archivo Narrow', sans-serif;
+	letter-spacing: .05rem;
+	margin-bottom:.8rem;
+}
+
+
+a:active {
+	color:#54bd82;
+}
+
+
+.nav {
+	font-family:'Archivo Narrow', sans-serif;
+	letter-spacing: .05rem;
+}
+
+.archivo{
+	font-family: 'Archivo Narrow', sans-serif;
+	font-size: 1.4rem;
+	text-transform: uppercase;
+	letter-spacing:.05rem;
+}
+
+
+
+/* banner */
+
+.banner{
+	height:35rem;
+	background-image:url(../img/banner-bg-1.jpg);
+	background-position:center;
+	box-shadow:inset 0 0 0 1000px rgba(0,0,0,.1);
+}
+
+@media (min-width: 1024px) {
+.banner {
+	background-size: 100%;
+}
+}
+
+/* end banner */
+
+
+/* hover effect */
+
+.hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+}
+
+.hovereffect .overlay {
+  position: absolute;
+  overflow: hidden;
+  width: 80%;
+  height: 80%;
+  left: 10%;
+  top: 10%;
+  border-bottom: 1px solid #FFF;
+  border-top: 1px solid #FFF;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: scale(0,1);
+  -ms-transform: scale(0,1);
+  transform: scale(0,1);
+}
+
+.hovereffect:hover .overlay {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.hovereffect img {
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+
+.hovereffect:hover img {
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.6" /><feFuncG type="linear" slope="0.6" /><feFuncB type="linear" slope="0.6" /></feComponentTransfer></filter></svg>#filter');
+  filter: brightness(0.6);
+  -webkit-filter: brightness(0.6);
+}
+
+.hovereffect h2 {
+  text-align: center;
+  position: relative;
+  font-size: 2rem;
+  background-color: transparent;
+  color: #FFF;
+ /* padding-top: 2.5em; */
+  padding-bottom:0;
+  margin-bottom:0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0,-100%,0);
+  transform: translate3d(0,-100%,0);
+}
+
+.hovereffect h3{
+	font-style:italic;
+	font-size:1.5rem;
+	margin-top:.7rem;
+	}
+
+.hovereffect a, hovereffect p {
+  color: #FFF;
+  padding: 2em 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0,100%,0);
+  transform: translate3d(0,100%,0);
+}
+
+.hovereffect:hover a, .hovereffect:hover p, .hovereffect:hover h2 {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+
+
+/* end effect */
+
+
+/* footer */
+
+.social{
+	list-style-type: none;
+	padding:0;
+	margin-top:0;
+	margin-bottom:1.4rem;
+}
+
+.social li {
+	display:inline;
+	margin-right:5px;
+	
+}
+
+.social li img{
+	height:25px;
+	margin-bottom:10px;
+}
+
+.social li:hover{
+	opacity:.5;
+	transition: ease-in-out .2s;
+}
+
+.copyright{
+	text-transform:uppercase;
+	color:#5F5F5F;
+	text-align:right;
+}
+
+.secondary{
+	color:#5F5F5F;
+	font-style:italic;
+	text-align:right;
+}
+	
+#about{
+	padding-top:8rem;
+	padding-bottom:4rem;
+}
+
+/* end footer */
+
+
+.navbar{
+	background-color:#4B4B4B;
+
+}
+
+
+/* about page */
+#about-page{
+	background-color: #f6f6f6;
+	color:#000;
+	padding-bottom: 5rem;
+}
+
+#about-page a{
+	text-decoration:underline;
+	color:#000;
+}
+
+#about-page a:hover{
+	color:#54bd82;
+}
+
+#about-page .h5 {
+	font-weight:700;
+	margin-bottom:0;
+}
+
+/* end ebout page */
