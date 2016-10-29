@@ -108,9 +108,47 @@
             </div>
         </div>
         
+        
+        
+        
+        <div id="instafeed"></div>
+
+
+<!-- <script type="text/javascript">
+    var userFeed = new Instafeed({
+        get: 'user',
+        userId: '3177538729',
+        accessToken: '3177538729.edf9543.22c8062dc1fb49098feb2e34636c6f0a'
+    });
+    userFeed.run();
+</script> -->
+
+<script type="text/javascript">
+  var userFeed = new Instafeed({
+    get: 'user',
+    userId: '3177538729',
+    clientId: 'edf954378167482587abd581a43c8063',
+    accessToken: '3177538729.edf9543.22c8062dc1fb49098feb2e34636c6f0a',
+    resolution: 'standard_resolution',
+    template: '<a href="{{link}}" target="_blank" id="{{id}}"><img src="{{image}}" /><span>{{likes}}{{comments}}</span></a>',
+    sortBy: 'most-recent',
+    limit: 32,
+    links: false
+  });
+  userFeed.run();
+</script>
+      
+
+
+
        
     </div>
 </div>
+
+
+
+
+
 
 
 
@@ -155,6 +193,7 @@
 <script src="js/jquery.backstretch.min.js"></script>
 <script src="js/wow.min.js"></script>
 <script src="js/custom.js"></script>
+<script type="text/javascript" src="js/instafeed.min.js"></script>
 
 </body>
 </html>
